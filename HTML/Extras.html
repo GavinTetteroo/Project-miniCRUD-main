@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Project-miniCRUD.css" />
+  </head>
+  <body>
+    <div class="landing4"></div>
+    <div class="sidebar" id="sidebar">
+      <a href="../HTML/index.html" style="text-decoration: none;"><h1>Shoarma</h1></a>  
+      <br/>
+      <a href="../HTML/Kapsalon.html" style= "text-decoration: none;"><h1>Kapsalon</h1></a>  
+      <br/>
+      <a href="../HTML/Durum.html" style="text-decoration: none;"><h1>Durum</h1></a>
+      <br/>
+      <a href="../HTML/Extras.html" style="text-decoration: none;"><h1>Extra's</h1></a>  
+      <br/>
+    <a href="../HTML/contact.html" id="extras" style="text-decoration: none;"><h1>Contact</h1></a>  
+    </div>
+    <header>
+      <form role="search" id="form">
+        <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+        <button>
+          <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+        </button>
+      </form>
+        </form>
+      <div class="menu">
+        <img src="../media/logo-shoarma-mexico.gif" alt="">
+      </div>
+      <div class="shoppingcart">
+        <img src="../media/white-shopping-cart-icon-9.png"/>
+      </div>
+      <div class="balkjes">
+        <img src="../media/threeline.png" alt="" id="hamburger" />
+      </div>
+    </header>
+    <main>
+      <div class="container-info">
+        <h1></h1>
+      </div>   
+      <!-- Box 1 --> 
+      <div class="container-box4">
+        <div class="box4-0"><img src="../media/Bakje saus.png" alt="">
+          <div class="overlay">Bakje Curry
+            <br></br>
+            €0,50
+          </div>
+        </div>
+        <div class="box4-1"><img src="../media/bakje-knoflooksaus.jpg" alt="">
+          <div class="overlay">Bakje Knoflook
+            <br></br>
+            €0,50
+          </div>
+        </div>
+        <div class="box4-2"><img src="../media/patat.png" alt="">
+          <div class="overlay">Patat
+            <br></br>
+            €4,-
+          </div>
+        </div>
+        <div class="box4-3"><img src="../media/Crusty-chicken.png" alt="">
+          <div class="overlay">Fried Chicken
+            <br></br>
+            €5,-
+          </div>
+        </div>
+      </div>
+      <div class="container-box4-1">
+        <div class="box4-4"><img src="../media/Cola drank.png" alt="">
+          <div class="overlay">Coca Cola 
+            <br></br>
+            €2,-
+          </div>
+        </div>
+        <div class="box4-5"><img src="../media/Icetea-flesje.jpg" alt="">
+          <div class="overlay">Ice Tea
+            <br></br>
+            €2,-
+          </div>
+        </div>
+        <div class="box4-6"><img src="../media/fanta-flesje.png" alt="">
+          <div class="overlay">Fanta 
+            <br></br>
+            €2,-
+          </div>
+        </div>
+        <div class="box4-7"><img src="../media/7up-flesje.png" alt="">
+          <div class="overlay">7UP
+            <br></br>
+            €2,-
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      const site = 'pagedart.com';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+    <script src="Javascript.js"></script>
+  </body>
+</html>
+
