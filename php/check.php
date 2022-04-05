@@ -2,7 +2,6 @@
 <?php 
 
 include_once("main.php");
-include_once("inlogfout.php")
 
 ?>
 
