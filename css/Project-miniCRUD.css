@@ -38,7 +38,7 @@ header {
   flex-direction: column;
   width: 75px;
   height: 75px;
-  margin-left: 500px;
+  margin-left: 150px;
 }
 
 form {
@@ -75,7 +75,7 @@ header .shoppingcart img {
   display: flex;
   height: 75px;
   width: 75px;
-  margin-left: 450px;
+  
 }
 
 header .balkjes img {
@@ -98,7 +98,7 @@ header .balkjes1 img {
   position: relative;
   top: 0;
   left: 0;
-  width: 350px;
+  width: 200px;
   height: 100vh;
   background-color: #212f3d;
   transition: left 2s;

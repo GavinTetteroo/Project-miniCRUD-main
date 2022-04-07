@@ -9,7 +9,7 @@
 
   </head>
   <body>
-    <div class="landing3"></div>
+    
     <div class="sidebar" id="sidebar">
       <a href="../HTML/index.html" style="text-decoration: none;"><h1>Shoarma</h1></a>  
       <br/>
@@ -21,6 +21,7 @@
       <br/>
     <a href="../HTML/contact.html" id="extras" style="text-decoration: none;"><h1>Contact</h1></a>  
     </div>
+    <div class="content">
     <header>
       <form role="search" id="form">
         <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
@@ -44,28 +45,26 @@
         <h1></h1>
       </div> 
       <!-- Box 1 -->     
-<div class="container-box3">
-        <div class="box3-0"><img src="../media/kapsalon-kipduner.png" alt="">
+  <div class="container-box" id="producten">
+        <div class="box product" data-product="kapsalon kipduner"><img src="../media/kapsalon-kipduner.png" alt="">
           <div class="overlay">Kapsalon Kipduner
             <br></br>
            €12,-
           </div>
         </div>
-        <div class="box3-1"><img src="../media/kapsalon-shoarma.png" alt="">
+        <div class="box product" data-product="kapsalon shoarma"><img src="../media/kapsalon-shoarma.png" alt="">
           <div class="overlay">Kapsalon Shoarma
             <br></br>
             €11,-
           </div>
-        </div>
-      </div> 
-<div class="container-box3-1">
-        <div class="box3-2"><img src="../media/Kapsalon-kalfdoner.png" alt="">
+        </div> 
+        <div class="box product" data-product="kapsalon kalfdoner"><img src="../media/Kapsalon-kalfdoner.png" alt="">
           <div class="overlay">Kapsalon Kalfdoner
             <br></br>
             €8,50
           </div>
         </div>
-        <div class="box3-3"><img src="../media/Kapsalon-kipfilet.png" alt="">
+        <div class="box product" data-product="kapsalon kipfilet"><img src="../media/Kapsalon-kipfilet.png" alt="">
           <div class="overlay">Kapsalon Kipfilet
             <br></br>
             €9,-
@@ -74,22 +73,6 @@
       </div>
     </main>
     <footer></footer>
-    <script src="../js/main.js"></script>
-    <script>
-      const f = document.getElementById('form');
-      const q = document.getElementById('query');
-      const google = 'https://www.google.com/search?q=site%3A+';
-      const site = 'pagedart.com';
-
-      function submitted(event) {
-        event.preventDefault();
-        const url = google + site + '+' + q.value;
-        const win = window.open(url, '_blank');
-        win.focus();
-      }
-
-      f.addEventListener('submit', submitted);
-    </script>
-    <script src="Javascript.js"></script>
+  </div> 
   </body>
 </html>

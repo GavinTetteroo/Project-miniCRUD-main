@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/Project-miniCRUD.css" />
   </head>
   <body>
-    <div class="landing2"></div>
+    
     <div class="sidebar" id="sidebar">
       <a href="../HTML/index.html" style="text-decoration: none;"><h1>Shoarma</h1></a>  
       <br/>
@@ -20,6 +20,7 @@
       <br/>
     <a href="../HTML/contact.html" id="extras" style="text-decoration: none;"><h1>Contact</h1></a>  
     </div>
+    <div class="content">
     <header>
       <form role="search" id="form">
         <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
@@ -43,26 +44,26 @@
         <h1></h1>
       </div>
       <!-- Box 1 --> 
-<div class="container-box2">
-        <div class="box2-0"><img src="../media/Durum.png" alt="">
+<div class="container-box">
+        <div class="box"><img src="../media/Durum.png" alt="">
           <div class="overlay">Durum
             <br></br>
             €11,-
           </div>
         </div>
-        <div class="box2-1"><img src="../media/kipdurum.png" alt="">
+        <div class="box"><img src="../media/kipdurum.png" alt="">
           <div class="overlay">Kip Durum
           <br></br>
           €11,-
         </div>
       </div>
-        <div class="box2-2"><img src="../media/lam-durum.jpg" alt="">
+        <div class="box"><img src="../media/lam-durum.jpg" alt="">
           <div class="overlay">Lam Durum
             <br></br>
             €11,-
           </div>
         </div>
-        <div class="box2-3"><img src="../media/Kebab-durum.png" alt="">
+        <div class="box"><img src="../media/Kebab-durum.png" alt="">
           <div class="overlay">Kebab Durum
             <br></br>
             €11,-
@@ -72,22 +73,7 @@
     </main>
     <footer></footer>
     <script src="../js/main.js"></script>
-    <script>
-      const f = document.getElementById('form');
-      const q = document.getElementById('query');
-      const google = 'https://www.google.com/search?q=site%3A+';
-      const site = 'pagedart.com';
-
-      function submitted(event) {
-        event.preventDefault();
-        const url = google + site + '+' + q.value;
-        const win = window.open(url, '_blank');
-        win.focus();
-      }
-
-      f.addEventListener('submit', submitted);
-    </script>
-    <script src="Javascript.js"></script>
+    
   </body>
 </html>
 
