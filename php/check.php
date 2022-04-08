@@ -41,10 +41,18 @@ if(isset($gebruikers[$naam]))
             }
     }
 //als de gebruikersnaam niet bekend is:
+
 else
     {
+
+        echo '<div class="gebruikersnaamfout">';
         echo 'De ingevoerde gebruikersnaam is niet bij ons bekend.';
+        echo '</div>';
     }
 
 ?>
+
+    <div class="close1">
+        <a href="../php/inlog.php">Terug naar inlogscherm</a>
+    </div>
 </div>

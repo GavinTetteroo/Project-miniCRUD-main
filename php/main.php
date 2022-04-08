@@ -17,7 +17,6 @@
     </div>
     
 
-    <div class="inlog-header">
 
     
 
@@ -26,5 +25,7 @@
         </div>
             <img class="inlog-logo" src="../media/logo-shoarma-mexico.gif" alt="">
         </div>
+
+        
 </body>
 </html>

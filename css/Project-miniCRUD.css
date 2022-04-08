@@ -11,94 +11,90 @@ html {
 
 body {
   display: flex;
+  width: 100%;
+  min-height: 100vh;
 }
 
 /*header*/
 
 header {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 76px;
-  justify-content: center;
+  padding: 0px 30px;
+}
+
+form {
+  width: 260px;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+}
+
+svg {
+  color: #fff;
+  fill: currentColor;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+button {
+  cursor: pointer;
+  width: 44px;
+  height: 30px;
 }
 
 /*header text*/
 
 .menu {
-  margin-right: 580px;
-  margin-top: 2px;
-  align-items: center;
-  height: 100px;
   width: 75px;
+  height: 100px;
 }
 
 .menu img {
-  display: flex;
-  flex-direction: column;
+  margin-top: 30px;
   width: 75px;
   height: 75px;
-  margin-left: 150px;
-}
-
-form {
-  width: 260px;
-  height: 44px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  z-index: 2;
-}
-
-svg {
-  display: flex;
-  color: #fff;
-  fill: currentColor;
-  width: 40px;
-  height: 40px;
-  padding: 11px;
-  z-index: 2;
-}
-
-button {
-  all: unset;
-  cursor: pointer;
-  width: 44px;
-  height: 44px;
-  z-index: 2;
 }
 
 /*header images*/
 
-header .shoppingcart img {
+header .options {
   display: flex;
-  height: 75px;
-  width: 75px;
+}
+
+header .shoppingcart img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  cursor: pointer;
   
 }
 
 header .balkjes img {
-  height: 60px;
-  width: 60px;
-  color: white;
-  margin-top: 10px;
-  margin-right: 30px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
 }
 
-header .balkjes1 img {
-  height: 60px;
-  width: 60px;
-  color: black;
-  margin-top: 20px;
-  margin-right: 30px;
+
+/* SIDEBAR */
+.side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 200px;
+  min-height: 100vh;
 }
 
 .sidebar {
   position: relative;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 100%;
   height: 100vh;
   background-color: #212f3d;
   transition: left 2s;
@@ -126,7 +122,7 @@ header .balkjes1 img {
   flex-direction: column;
   width: 100%;
   height: auto;
-
+  padding-left: 200px;
 }
 
 
@@ -194,22 +190,39 @@ header .balkjes1 img {
 }
 
 
-.inlogscherm {
-  margin-top: 100px;
+.contact-box {
+  position: relative;
   display: flex;
-  height: 100px;
-  width: 100px;
-  color: red;
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  background-color: white;
+  box-shadow: black 0px 5px 15px;
+  font-size: 8px;
+}
+
+
+
+.inlogscherm {
+  display: flex;
   flex-direction: column;
-  border:2px solid black;
-  width: 300px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 200px;
+  height: 100px;
+  width: 100%;
+  color: red;
+
   height: 275px;
   font-size: 30px;
   font-family: 'Bebas Neue', cursive;
 }
 
 .terug {
-  margin-right: 1450px;
+  position: absolute;
+  
   display: flex;
   flex-direction: column;
   font-size: 30px;
@@ -217,8 +230,13 @@ header .balkjes1 img {
 }
 
 .inlog-logo {
-  margin-right: 30px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 710px;
   display: flex;
+  flex-direction: column;
   height: 100px;
   width: 100px;
 }
@@ -229,14 +247,19 @@ header .balkjes1 img {
 }
 
 .bedrijfsnaam p{
-  margin-right: 20px;
+  margin-top: 50px;
+  margin-left: 700px;
+  position: absolute;
   display: flex;
+  flex-direction: column;
   font-size: 30px;
   font-family: 'Bebas Neue', cursive;
   color: red;
 }
 
 .bedrijfsnaam {
+  position: absolute;
+  align-items: center;
   display: flex;
   font-size: 30px;
   font-family: 'Bebas Neue', cursive;
@@ -246,12 +269,11 @@ header .balkjes1 img {
 /* PHP inlogfout.php */
 
 .inlog-fout {
-  margin-top: 100px;
+  margin-left: 130px ;
+  margin-top: 260px;
   align-items: center;
   justify-content: center;
-  display: flex;
-  height: 100px;
-  width: 700px;
+  justify-items: center;
   color: red;
   flex-direction: column;
   font-size: 30px;
@@ -269,15 +291,18 @@ header .balkjes1 img {
 /* Beveiligdepagina.php */
 
 .in-systeem {
+  margin-left: 470px;
+  margin-top: 250px;
+  justify-content: center;
+  position: absolute;
   margin-top: 100px;
   align-items: center;
   justify-content: center;
   display: flex;
   height: 100px;
-  width: 100px;
+  width: 100%;
   color: red;
   flex-direction: column;
-  border:2px solid black;
   width: 300px;
   height: 200px;
   font-size: 30px;
@@ -288,24 +313,22 @@ header .balkjes1 img {
 
 
 .uitloggen {
-  margin-top: 100px;
+  margin-left: 620px;
+  margin-top: 160px;
   align-items: center;
   justify-content: center;
   display: flex;
   height: 100px;
-  width: 100px;
+  width: 100%;
   color: red;
   flex-direction: column;
-  border:2px solid black;
   width: 300px;
   height: 150px;
   font-size: 30px;
   font-family: 'Bebas Neue', cursive;
 }
 
-.close {
-  color: black;
-}
+
 
 .begin {
   margin-left: 310px;
@@ -313,3 +336,37 @@ header .balkjes1 img {
   font-family: 'Bebas Neue', cursive;
 }
 
+.close {
+  margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.close1 {
+  margin-top: 50px;
+  margin-left: 500px;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.gebruikersnaamfout {
+  margin-left: 270px;
+  justify-content: center;
+  position: absolute;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  color: red;
+  flex-direction: column;
+  width: 700px;
+  height: 200px;
+  font-size: 30px;
+  font-family: 'Bebas Neue', cursive;
+}
