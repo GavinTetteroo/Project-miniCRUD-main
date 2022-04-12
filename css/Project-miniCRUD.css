@@ -353,20 +353,46 @@ header .balkjes img {
     font-family: 'Bebas Neue', cursive;
 }
 
+.close2 {
+  margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+
 .gebruikersnaamfout {
-  margin-left: 270px;
+  margin-left: 260px;
   justify-content: center;
   position: absolute;
-  margin-top: 50px;
+  margin-top: 100px;
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 100px;
   width: 100%;
   color: red;
   flex-direction: column;
   width: 700px;
   height: 200px;
+  font-size: 30px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.producten-tabel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  margin-right: 5000px;
+
+}
+
+.product-text {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: red;
   font-size: 30px;
   font-family: 'Bebas Neue', cursive;
 }

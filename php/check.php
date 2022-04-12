@@ -53,6 +53,6 @@ else
 ?>
 
     <div class="close1">
-        <a href="inlog.php">Terug naar inlogscherm</a>
+        <a href="../php/inlog.php">Terug naar inlogscherm</a>
     </div>
 </div>

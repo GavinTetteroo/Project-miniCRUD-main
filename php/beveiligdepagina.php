@@ -20,6 +20,9 @@ if ($_SESSION['login'] != "1")
     <footer><a href="uitloggen.php">Uitloggen</a></footer>    
     </form>
     
+    <div class="add-product">
+        <a href="addproduct.php">Voeg product toe</a>
+    </div>
         
         
     </body>
