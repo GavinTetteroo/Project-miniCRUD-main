@@ -16,7 +16,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-        
+    <?php
+        //includes connect.php
+
+        include_once("connect.php");
+        //CONNECT TO DATABASE, USE ABOVE IN THE PAGE, ADDiTEM, UPDATE, DELETE
+        $sql = "SELECT * FROM gerechten";
+        $stmt = $connect->prepare($sql);
+        $stmt->execute();
+        $results =$stmt->fetchAll();
+    ?>
     <div class="close2"><a href="check.php">Terug</a></div>
 
     <div class="product-text">
@@ -24,19 +33,19 @@
     </div>
 
 <div class="producten-tabel">
-    <form action="producten.php">
-    <label for="fname">Titel:</label><br>
-    <input type="text" id="fname" name="fname" value=""><br>
-    <label for="lname">Afbeelding:</label><br>
-    <input type="text" id="lname" name="lname" value=""><br><br>
-    <label for="lname">Prijs:</label><br>
-    <input type="text" id="lname" name="lname" value=""><br><br>
-    <label for="lname">Voorraad:</label><br>
-    <input type="text" id="lname" name="lname" value=""><br><br>
-    <input type="submit" value="Submit">
+    <form action="producten.php" method="post">
+    <label for="titel">Titel:</label><br>
+    <input type="text" id="titel" name="titel" value=""><br>
+    <label for="image_link">Afbeelding:</label><br>
+    <input type="text" id="image_link" name="image_link" value=""><br><br>
+    <label for="prijs">Prijs:</label><br>
+    <input type="text" id="prijs" name="prijs" value=""><br><br>
+    <label for="categorie">Catergorie:</label><br>
+    <input type="text" id="categorie" name="categorie" value=""><br><br>
+    <label for="voorraad">Voorraad:</label><br>
+    <input type="text" id="voorraad" name="voorraad" value=""><br><br>
+    <input type="submit" name="Submit" value="Submit">
     </form> 
-
-        <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 </div>        
 </body>
 </html>

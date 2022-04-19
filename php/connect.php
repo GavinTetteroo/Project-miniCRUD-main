@@ -1,5 +1,4 @@
 <?php
-require_once ("database.php");
     /** @var PDO $connect */
     $host = 'localhost';
     $db = 'minicrud';
@@ -16,15 +15,9 @@ require_once ("database.php");
 
 try {
     $connect = new PDO($dns, $user, $pass, $opt);
-    echo "Je bent verboden met de database";
 }
 catch (PDOException $e)
 {
     echo $e->getMessage();
     die("Je bent niet verbonden met de database");
 }
-
-$sql = "SELECT * FROM gerechten";
-$stmt = $connect->prepare($sql);
-$stmt->execute();
-$results =$stmt->fetchAll();

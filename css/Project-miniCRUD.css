@@ -291,7 +291,7 @@ header .balkjes img {
 /* Beveiligdepagina.php */
 
 .in-systeem {
-  margin-left: 470px;
+  margin-left: 489px;
   margin-top: 250px;
   justify-content: center;
   position: absolute;
@@ -346,7 +346,7 @@ header .balkjes img {
 
 .close1 {
   margin-top: 50px;
-  margin-left: 500px;
+  margin-left: 517px;
     display: flex;
     flex-direction: column;
     font-size: 30px;
@@ -392,6 +392,16 @@ header .balkjes img {
   text-align: center;
   display: flex;
   flex-direction: column;
+  color: red;
+  font-size: 30px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.add-product {
+  margin-right: 38px;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
   color: red;
   font-size: 30px;
   font-family: 'Bebas Neue', cursive;
