@@ -1,11 +1,10 @@
 
 <?php
-if ($_SESSION['login'] != "1")
+session_start();
+if ($_SESSION['name'])
     {
-        header('Location: login.php');
-        exit();
-    }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +15,7 @@ if ($_SESSION['login'] != "1")
 </head>
 <body>
     <form class="in-systeem" >
-    <?php echo "Je bent ingelogd als " . $_SESSION['login-naam'] . "."; ?>
+    <?php echo "Je bent ingelogd als " . $_SESSION['name'] . "."; ?>
     <footer><a href="uitloggen.php">Uitloggen</a></footer>    
     </form>
     
@@ -27,3 +26,6 @@ if ($_SESSION['login'] != "1")
         
     </body>
 </html>
+<?php
+    }
+?>

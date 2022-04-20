@@ -30,7 +30,7 @@ form {
   width: 260px;
   height: auto;
   border-radius: 5px;
-  display: flex;
+  margin-right: 1000px;
 }
 
 svg {

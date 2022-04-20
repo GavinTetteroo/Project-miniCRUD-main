@@ -1,7 +1,14 @@
-<body class="admin_panel">
 <?php
-
-?>
+session_start();
+require_once("connect.php");
+$sql = "SELECT * FROM gerechten";
+$stmt = $connect->prepare($sql);
+$stmt->execute();
+$result = $stmt->fetchAll();
+if ($_SESSION['name'])
+{
+    ?>
+<body class="admin_panel">
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,13 +33,14 @@
         $stmt->execute();
         $results =$stmt->fetchAll();
     ?>
-    <div class="close2"><a href="check.php">Terug</a></div>
+    <div class="close2"><a href="beveiligdepagina.php">Terug</a></div>
 
     <div class="product-text">
         <h2>Producten Toevoegen</h2>
     </div>
 
 <div class="producten-tabel">
+    Add Product
     <form action="producten.php" method="post">
     <label for="titel">Titel:</label><br>
     <input type="text" id="titel" name="titel" value=""><br>
@@ -45,7 +53,36 @@
     <label for="voorraad">Voorraad:</label><br>
     <input type="text" id="voorraad" name="voorraad" value=""><br><br>
     <input type="submit" name="Submit" value="Submit">
-    </form> 
+    </form>
+    <br>
+    <br>
+    <br> 
+    Update and Delete
+    <?php  foreach($result as $gerechten){
+        ?> 
+        <br>
+    <form action= "updateanddelete.php" method="post">
+    <label for="titel">ID:</label><br>
+    <input type="text" id="ID" readonly name="ID" value="<?php echo $gerechten['ID']; ?>"><br>
+    <label for="titel">Titel:</label><br>
+    <input type="text" id="titel" name="titel" value="<?php echo $gerechten['titel']; ?>"><br>
+    <label for="image_link">Afbeelding:</label><br>
+    <input type="text" id="image_link" name="image_link" value="<?php echo $gerechten['image_link']; ?>"><br>
+    <label for="prijs">Prijs:</label><br>
+    <input type="text" id="prijs" name="prijs" value="<?php echo $gerechten['prijs']; ?>"><br>
+    <label for="categorie">Catergorie:</label><br>
+    <input type="text" id="categorie" name="categorie" value="<?php echo $gerechten['categorie']; ?>"><br>
+    <label for="voorraad">Voorraad:</label><br>
+    <input type="text" id="voorraad" name="voorraad" value="<?php echo $gerechten['voorraad']; ?>"><br>
+    <input type="submit" name="Update" value="Update"><input type="submit" name="Delete" value="Delete">
+    </form>
+    <br>
+    <?php }?> 
 </div>        
+
+
 </body>
 </html>
+<?php
+    }
+?>
