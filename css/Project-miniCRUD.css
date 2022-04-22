@@ -425,3 +425,20 @@ header .balkjes img {
   display: flex;
   
 }
+
+.contact-text h1 {
+  display: flex;
+  color: white;
+  font-size: 30px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.formclass {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-left: 300px;
+  border: 3px black solid;
+  padding: 5px;
+  font-family: 'Bebas Neue', cursive; 
+}

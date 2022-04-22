@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/Project-miniCRUD.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="side">
@@ -47,19 +50,34 @@
       </div>
         <!-- Box 1 -->
         <div class="container-box">
-            <div class="contact-box">
-              <h1>0645789523</h1>
-        </div>
-            <div class="contact-box">
+          <div class="contact-text">
+          <h1>0645789523</h1>
+       
+            
                 <h1>Twitter: @ShoarenjeMa
                     <br>Instagram: @ShoarenjeMa</br>
                 </h1>
-        </div>
-            <div class="contact-box">
+        
+            
                 <h1>E-mail: ShoarenjeMa@gmail.com</h1>
-              
-        	</div>
+          </div>    
+        
+        <form class="formclass" action=”mailto:typeyouremail
+        method=”POST”
+        enctype=”multipart/form-data”
+        name=”EmailForm”> 
+        Naam:<br><input type="text" size="19" name="ContactName" placeholder="Naam..."><br><br>
+    
+        E-mail:<br><input type="text" size="19" name="Emailname" placeholder="E-mail..."><br><br>
+    
+        Bericht:<br> <textarea name=”ContactCommentt” placeholder="Type hier..." rows=”6″ cols=”20″>
+    
+        </textarea><br><br> <input type="submit" value="Verstuur"> 
+
+        
+      </form>
     </div>
+        
     </main>
     <footer></footer>
     <script src="../js/main.js"></script>
