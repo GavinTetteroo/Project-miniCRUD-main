@@ -410,12 +410,13 @@ header .balkjes img {
   font-family: 'Bebas Neue', cursive;
 }
 
-.login {
+.login form{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin-left: 641px;
+  margin-left: 665px;
+  margin-top: 200px;
   color: red;
   font-size: 20px;
   font-family: 'Bebas Neue', cursive;
