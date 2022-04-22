@@ -2,5 +2,5 @@
 session_start();
 unset($_SESSION["id"]);
 unset($_SESSION["name"]);
-header("Location: inlog.php");
+header("Location: ../HTML/index.html");
 ?>

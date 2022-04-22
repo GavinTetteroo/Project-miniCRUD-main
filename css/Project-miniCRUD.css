@@ -27,11 +27,12 @@ header {
 }
 
 form {
-  width: 260px;
   height: auto;
   border-radius: 5px;
-  margin-right: 1000px;
+  display: flex;
 }
+
+
 
 svg {
   color: #fff;
@@ -55,6 +56,7 @@ button {
 }
 
 .menu img {
+
   margin-top: 30px;
   width: 75px;
   height: 75px;
@@ -291,7 +293,7 @@ header .balkjes img {
 /* Beveiligdepagina.php */
 
 .in-systeem {
-  margin-left: 489px;
+  margin-left: 620px;
   margin-top: 250px;
   justify-content: center;
   position: absolute;
@@ -398,11 +400,28 @@ header .balkjes img {
 }
 
 .add-product {
-  margin-right: 38px;
+  margin-top: 350px;
+  margin-left: 680px;
   text-align: center;
   display: flex;
   flex-direction: row-reverse;
   color: red;
   font-size: 30px;
   font-family: 'Bebas Neue', cursive;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 641px;
+  color: red;
+  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.uitlog1 {
+  display: flex;
+  
 }
