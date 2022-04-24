@@ -1,3 +1,5 @@
+
+<div class="login">
 <?php
     session_start();
     $message="";
@@ -9,13 +11,14 @@
         $_SESSION["id"] = $row['id'];
         $_SESSION["name"] = $row['name'];
         } else {
-         $message = "Invalid Username or Password!";
+         $message = "Gebruikersnaam of Wachtwoord is fout!";
         }
     }
     if(isset($_SESSION["id"])) {
     header("Location:beveiligdepagina.php");
     }
 ?>
+</div>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -51,7 +54,7 @@
     </div>
     <img class="inlog-logo" src="../media/logo-shoarma-mexico.gif" alt="">
 </div>
-<div class="login">
+<div class="login1">
     <form name="frmUser" method="post" action="" align="center">
     <div class="message"><?php if($message!="") { echo $message; } ?></div>
     <h3 align="center">Vul uw logingegevens in</h3>
@@ -61,7 +64,7 @@
     Wachtwoord:<br>
     <input type="password" name="password">
     <br><br>
-    <input type="submit" name="submit" value="Submit">
+    <input type="submit" name="submit" value="Login">
     </form>
 </div>
 </div>
